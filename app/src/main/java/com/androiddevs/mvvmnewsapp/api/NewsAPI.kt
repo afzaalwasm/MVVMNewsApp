@@ -10,10 +10,10 @@ interface NewsAPI {
     @GET("v2/top-headlines")
     suspend fun  getBreakingNews(
         @Query("country")
-        countryCode: String="use",
+        countryCode: String="us",
         @Query("page")
         pageNumber:Int=1,
-        @Query("apikey")
+        @Query("apiKey")
         apiKey: String=API_KEY
 
 
